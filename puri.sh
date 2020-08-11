@@ -4,6 +4,7 @@
 # Dependencies: grep, sed, sort, cut, head, seq, cat
 # Usage: puri [FILE...]
 
+
 URLS=/tmp/puri_urls
 view=/tmp/puri_view
 marks=/tmp/tide_marks
@@ -101,6 +102,7 @@ init() {
    sed -i -e 's/\s*│\s*//g' -e 's/| //g' $URLSTRING # For weechat
    grep -Eo 'http[s]?://[-#a-Z0-9_./?=_%:+&]*' $URLSTRING | sort -u > "$URLS"
    rm -f $URLSTRING
+
 
    ITEMS=$(mwc "$URLS")
    end=$((ITEMS > LIMIT ? LIMIT : ITEMS))
