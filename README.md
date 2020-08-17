@@ -18,7 +18,7 @@ puri is a ~100 line POSIX shellscript.
 ## Installation
 
 ```sh
-git clone https://github.com/salman-abedin/puri.git && cd puri && sudo make install
+git clone https://github.com/salman-abedin/puri.sh.git && cd puri.sh && sudo make install
 ```
 
 ## Usage
